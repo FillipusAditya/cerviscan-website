@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Login | CerviScan</title>
+        <link rel="stylesheet" href="styles_.css" />
+        <link
+            rel="icon"
+            href="../static/assets/logo-unsoed-baru.png"
+            type="image/png"
+        />
+        <link
+            rel="stylesheet"
+            href="{{ url_for('static', filename='styles/styles_.css') }}"
+        />
+    </head>
+    <body>
+        <div class="page-container">
+            <div class="section-container login-card">
+                <div class="identity">
+                    <img src="../static/assets/logo-unsoed-baru.png" />
+                    <div>
+                        <h1>CerviScan</h1>
+                        <p>cervical cancer detection</p>
+                    </div>
+                </div>
+                <form action="/register" method="POST">
+                    <h1>Create an Account</h1>
+                    <label for="username">Username:</label>
+                    <input type="text" id="username" name="username" required />
+
+                    <label for="password">Password:</label>
+                    <input
+                        type="password"
+                        id="password"
+                        name="password"
+                        required
+                    />
+
+                    <label for="password_confirm">Confirm Password:</label>
+                    <input
+                        type="password"
+                        id="password_confirm"
+                        name="password_confirm"
+                        required
+                    />
+
+                    <button type="submit">Register</button>
+
+                    {% with messages = get_flashed_messages() %} {% if messages
+                    %}
+                    <div class="error">{{ messages[0] }}</div>
+                    {% endif %} {% endwith %}
+
+                    <p>
+                        Already have an account?
+                        <a href="/login">Login here</a>.
+                    </p>
+                </form>
+            </div>
+        </div>
+    </body>
+</html>

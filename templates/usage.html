@@ -1,0 +1,81 @@
+{% extends 'base.html' %}{% block title %} Usage {% endblock %} {% block content
+%}
+<div class="page-container">
+    <!-- ABOUT SECTION -->
+    <div class="section-container">
+        <h1 class="title">About CerviScan</h1>
+        <p class="about-paragraph">
+            <span class="indentation"></span>CerviScan is an innovative
+            application designed for the early detection of cervical cancer
+            using Visual Inspection with Acetic Acid (VIA) images. This
+            detection is powered by a machine learning model, ensuring accurate
+            and efficient results.
+        </p>
+        <p class="about-paragraph">
+            <span class="indentation"></span>This project is supervised and
+            developed by a collaborative team:
+        </p>
+        <div class="member-container">
+            <p class="about-paragraph bold">Supervisors:</p>
+            <ol>
+                <li>1. Prof. Dr. Eng. Ir. Retno Supriyanti, S.T., M.T.</li>
+                <li>2. Mohammad Irham Akbar, S.Kom., M.Cs.</li>
+                <li>3. Yogi Ramadhani, S.T., M.Eng.</li>
+                <li>4. Katon Muhammad, S.T., M.T.</li>
+            </ol>
+            <br />
+            <p class="about-paragraph bold">Medical Partners:</p>
+            <ol>
+                <li>1. dr. Futiat Diana Kartika</li>
+                <li>2. Kartika Dwi Hapsari, S.Tr.Keb</li>
+            </ol>
+            <br />
+            <p class="about-paragraph bold">
+                Development Team (Electrical Engineering, Universitas Jenderal
+                Soedirman):
+            </p>
+            <ol>
+                <li>1. Fillipus Aditya Nugroho</li>
+                <li>2. M. Saujana Shafi Kehaulani</li>
+                <li>3. Tegar Dwi Agung Saputra</li>
+                <li>4. M. Rizqy Maulana Sarwono</li>
+            </ol>
+        </div>
+
+        <p class="about-paragraph" style="margin-top: 15px">
+            <span class="bold">Supported by:</span>
+            Kementerian Pendidikan Tinggi, Sains dan Teknologi through Scheme
+            <span class="italic">"Penelitian Terapan"</span> 2025–2026.
+        </p>
+    </div>
+
+    <!-- USAGE INSTRUCTIONS -->
+    <div class="section-container">
+        <h1 class="title">Usage Instructions</h1>
+        <p class="paragraph">
+            1. Go to the <span class="bold">Go Scan</span> page.
+        </p>
+        <p class="paragraph">
+            2. Fill out the <span class="bold">Profile Card</span> by entering
+            the patient's first name, last name, and date of birth.
+        </p>
+        <p class="paragraph">
+            3. Upload a VIA image. Ensure the image is cropped to focus on the
+            region of interest before uploading.
+        </p>
+        <p class="paragraph">
+            4. Press the <span class="bold">Go Scan</span> button below the
+            upload field to start the prediction process.
+        </p>
+        <p class="paragraph">
+            5. View the prediction results and details on the
+            <span class="bold">Result Card</span>.
+        </p>
+        <p class="paragraph">
+            6. To save the results to the album, press
+            <span class="bold">Save</span>. Press
+            <span class="bold">Retake Scan</span> to redo the detection.
+        </p>
+    </div>
+</div>
+{% endblock %}
